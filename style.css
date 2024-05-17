@@ -67,10 +67,10 @@
     right: 100px;
   }
   .images img{
-    height: 90%;
+    height: 80%;
     position: absolute;
     left: 70%;
-    bottom: 0%;
+    bottom: 15%;
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
   }
@@ -106,9 +106,61 @@
     height: 640px;
     padding: 10px;
     margin: 10px;
+    border-radius: 15px;
   }
 
   .gallery img:hover{
     background-color: rgb(255, 212, 93);
     cursor: pointer;
+    border-radius: 15px;
   }
+
+  /* Kompetencer section */
+  #Kompetencer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(248, 246, 241);
+  }
+  #Kompetencer h1{
+    margin: 60px;
+    color: rgb(64, 119, 73);
+  }
+  #Kompetencer h2{
+    margin: 15px;
+    font-size: 3rem;
+    color: rgba(168, 66, 40, 1);
+  }
+  
+  .row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: rgb(248, 246, 241);
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 300px;
+    border: 10px solid rgb(51, 72, 212);
+    margin: 5px;
+    align-items: center;
+    text-align:left;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(255, 212, 93) 50%, rgb(248, 246, 241) 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+  }
+  
+.box:hover{
+    background-position: left bottom;
+}
+.box img{
+    width: 80px;
+    height: 80px;
+}
+
+
