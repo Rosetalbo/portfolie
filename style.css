@@ -121,6 +121,47 @@
     border-radius: 15px;
   }
 
+  /* Om mig section */
+  
+#om{
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  background-color: rgb(248, 246, 241);
+}
+
+#om h1{
+  color: rgba(168, 66, 40, 1);
+  margin: 60px;
+}
+
+#om p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.om{
+  display: flex;
+}
+
+.om img{
+  width: 600px;
+  height: 600px;
+  padding: 0px 60px;
+}
+
+.navn{
+  padding: 10px;
+}
+.navn h2{
+  font-size: 3rem;
+  font-family: 'ultra', sans-serif;
+  color: rgb(51, 72, 212);
+}
+
+
+
   /* Kompetencer section */
   #Kompetencer{
     display: flex;
@@ -176,4 +217,7 @@
     height: 80px;
 }
 
+/* mobil */
+@media only screen and (max-with: 900px) {
 
+}
