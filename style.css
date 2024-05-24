@@ -116,6 +116,11 @@ h2 {
   color: rgb(64, 119, 73);
 }
 
+#Projekter h2{
+  padding: 10px;
+  color: rgb(27, 32, 31);
+}
+
 .wrapper {
   width: 100%;
   box-sizing: border-box;
@@ -200,6 +205,7 @@ h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin-right: 60px;
 }
 
 .om {
@@ -207,9 +213,10 @@ h2 {
 }
 
 .om img {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   padding: 0px 60px;
+  border-radius: 15px;
 }
 
 .navn {
@@ -222,6 +229,23 @@ h2 {
   color: rgb(51, 72, 212);
 }
 
+#om button{
+  padding: 10px 5px;
+  width: 20%;
+  font-family: 'Ultra', sans-serif;
+  border-radius: 15px;
+  background-color: rgb(255, 212, 93);
+  color: rgb(27, 32, 31);
+  border: 7px solid rgb(27, 32, 31);
+  outline: none;
+  }
+  
+  #om button:hover{
+    background-color: rgb(27, 32, 31);
+    color: rgb(248, 246, 241);
+    cursor: pointer;
+  }
+
 /* Kompetencer section */
 #Kompetencer {
   display: flex;
@@ -230,29 +254,22 @@ h2 {
 }
 
 #Kompetencer h1 {
-  margin: 60px 0;
   color: rgb(64, 119, 73);
   text-align: left;
+  margin: 60px;
 }
 
 #Kompetencer h2 {
   margin: 15px 0;
   font-size: 3rem;
   color: rgba(168, 66, 40, 1);
-  text-align: center;
-}
-
-#Kompetencer h2:hover {
-  margin: 15px 0;
-  font-size: 3rem;
-  color: rgb(248, 246, 241)
-  text-align: center;
+  text-align: left; 
 }
 
 .row {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
   box-sizing: border-box;
   background-color: rgb(248, 246, 241);
   padding: 20px;
@@ -260,11 +277,10 @@ h2 {
 
 .box {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start; 
-  align-items: center; 
-  width: 600px;
-  height: 500px;
+  flex-direction: row;
+  align-items: center;
+  width: calc(50% - 40px);
+  height: 400px;
   border: 10px solid rgb(51, 72, 212);
   margin: 20px; 
   text-align: left;
@@ -281,10 +297,23 @@ h2 {
   color: rgb(248, 246, 241);
 }
 
-.box img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 20px;
+.content {
+  display: flex;
+  align-items: center;
+  width: 100%; 
+}
+
+.content img {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px; 
+  margin-right: 20px; 
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 170px);
 }
 
 ul {
@@ -335,6 +364,8 @@ li span {
 }
 
 .input{
+  font-family: 'Poppins', sans-serif;
+  color: rgb(27, 32, 31);
   padding: 15px 20px;
   margin: 15px;
   width: 50%;
@@ -347,19 +378,22 @@ li span {
   margin: 15px;
   padding: 15px 20px;
   width: 50%;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(27, 32, 31);
   border: 10px solid rgb(27, 32, 31);
   outline: none;
   border-radius: 15px;
 }
 
 #submit{
-padding: 15px 20px;
+padding: 10px 5px;
 margin: 30px;
-width: 15%;
+width: 10%;
+font-family: 'Ultra', sans-serif;
 border-radius: 15px;
 background-color: rgb(255, 212, 93);
 color: rgb(27, 32, 31);
-border: 10px solid rgb(27, 32, 31);
+border: 7px solid rgb(27, 32, 31);
 outline: none;
 }
 
@@ -369,6 +403,12 @@ outline: none;
   cursor: pointer;
 }
 
+footer {
+  text-align: left;
+  padding: 15px;
+  background-color: rgb(255, 212, 93);
+  color: rgb(27, 32, 31);
+}
 /* mobil */
 @media only screen and (max-with: 900px) {
 
