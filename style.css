@@ -110,6 +110,10 @@ h2 {
   text-align: left;
 }
 
+#home h2{
+color: rgb(64, 119, 73);
+}
+
 .images {
   width: 45%;
   height: 80%;
@@ -134,6 +138,12 @@ h2 {
   left: 60%;
 }
 
+#home-mobil img{
+  display: none;
+}
+
+
+
 /* Projekter section */
 #Projekter {
   display: flex;
@@ -142,7 +152,7 @@ h2 {
 
 #Projekter h1 {
   margin: 60px;
-  color: rgb(64, 119, 73);
+  color: rgba(168, 66, 40, 1);
 }
 
 #Projekter h2{
@@ -226,7 +236,7 @@ h2 {
 }
 
 #om h1 {
-  color: rgba(168, 66, 40, 1);
+  color: rgb(64, 119, 73);
   margin: 60px;
 }
 
@@ -242,10 +252,11 @@ h2 {
 }
 
 .om img {
-  width: 00px;
+  width: 600px;
   height: 600px;
   padding: 0px 60px;
   border-radius: 15px;
+  display: block;
 }
 
 .navn {
@@ -283,7 +294,7 @@ h2 {
 }
 
 #Kompetencer h1 {
-  color: rgb(64, 119, 73);
+  color: rgba(168, 66, 40, 1);
   text-align: left;
   margin: 60px;
 }
@@ -383,6 +394,7 @@ li span {
 
 #contact h1{
   margin: 60px;
+  color: rgb(64, 119, 73);
 }
 
 .form{
@@ -447,6 +459,7 @@ footer {
 
   .burger-menu {
     display: flex;
+    padding: 10px;
   }
 
   .nav-links {
@@ -489,9 +502,29 @@ footer {
     height: auto;
   }
 
+  #home h1{
+    display: flex;
+    font-size: 3rem;
+  }
+
+  #home h2{
+    display: flex;
+  }
+
+  #home img{
+  display: none;
+  }
+
+  #home-mobil img{
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
   .heading {
   display: flex;
-  font-size: 2rem;
+  font-size: 3rem;
+  margin: 0 20px;
   }
 
   .images {
@@ -521,18 +554,23 @@ footer {
   .om {
     flex-direction: column;
     align-items: center;
+    margin: 10px 0;
   }
 
   .om img {
-    width: 100%;
+    width: 90%;
     height: auto;
-    padding: 0;
+    margin: 10px 0;
   }
 
   .navn h2 {
     font-size: 2rem;
+    margin: 10px 0;
   }
 
+  .navn p{
+    margin: 10px 0;
+  }
   #om button {
     width: 50%;
   }
