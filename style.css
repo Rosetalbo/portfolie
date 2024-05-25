@@ -61,6 +61,35 @@ h2 {
   border-bottom: 2px solid rgba(168, 66, 40, 1);
 }
 
+/* Burger menu */
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  z-index: 2;
+}
+
+.burger-menu div {
+  width: 30px;
+  height: 3px;
+  background-color: rgba(168, 66, 40, 1);
+  transition: all 0.3s linear;
+  transform-origin: 1px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  transition: transform 0.3s ease-in;
+}
+
 /* Hjem section */
 #home {
   display: flex;
@@ -213,8 +242,8 @@ h2 {
 }
 
 .om img {
-  width: 500px;
-  height: 500px;
+  width: 00px;
+  height: 600px;
   padding: 0px 60px;
   border-radius: 15px;
 }
@@ -410,6 +439,133 @@ footer {
   color: rgb(27, 32, 31);
 }
 /* mobil */
-@media only screen and (max-with: 900px) {
+@media (max-width: 900px) {
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  .burger-menu {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    height: 100vh;
+    background-color: rgb(248, 246, 241);
+    width: 100%;
+    transform: translateX(100%);
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+
+  .menu-toggle:checked ~ .nav-links {
+    transform: translateX(0);
+  }
+
+  .menu-toggle:checked ~ .burger-menu .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-toggle:checked ~ .burger-menu .line2 {
+    opacity: 0;
+  }
+
+  .menu-toggle:checked ~ .burger-menu .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  #home {
+    padding-top: 100px;
+    padding-left: 20px;
+    height: auto;
+  }
+
+  .heading {
+  display: flex;
+  font-size: 2rem;
+  }
+
+  .images {
+    width: 100%;
+    height: auto;
+  }
+
+  .images img {
+    position: static;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .wrapper .container .hero-section {
+    grid-template-columns: 1fr;
+  }
+
+  #om {
+    height: auto;
+  }
+
+  .om {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .om img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .navn h2 {
+    font-size: 2rem;
+  }
+
+  #om button {
+    width: 50%;
+  }
+
+  #Kompetencer .row {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .box {
+    width: 100%;
+    margin: 10px 0;
+    height: fit-content;
+  }
+
+  .content img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .text {
+    width: calc(100% - 120px);
+  }
+
+  .form .input {
+    width: 80%;
+  }
+
+  #submit{
+    width: 30%;
+  }
+
+  button {
+    width: 80%;
+  }
 }
